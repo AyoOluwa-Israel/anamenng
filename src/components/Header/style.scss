@@ -1,0 +1,31 @@
+.header {
+  width: 100%;
+  height: 50px;
+  background: #303030;
+
+  &__wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__left {
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    align-items: center;
+    letter-spacing: normal;
+    p {
+      width: 200px;
+    }
+
+    > div {
+      width: 200px;
+      background: #cfb995;
+      height: 50px;
+    }
+  }
+}
