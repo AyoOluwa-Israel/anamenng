@@ -1,7 +1,9 @@
+@use "../../globalStyle.scss" as v;
+
 .header {
   width: 100%;
   height: 50px;
-  background: #303030;
+  background: v.$darkGrey-color;
 
   &__wrapper {
     width: 90%;
@@ -15,7 +17,7 @@
     display: flex;
     font-size: 15px;
     font-weight: 500;
-    color: #fff;
+    color: v.$white-color;
     align-items: center;
     letter-spacing: normal;
     > p {
@@ -24,7 +26,7 @@
 
     > div {
       width: 200px;
-      background: #cfb995;
+      background: v.$brown-color;
       height: 50px;
       display: flex;
       align-items: center;

@@ -1,3 +1,5 @@
+@use "../../globalStyle.scss" as v;
+
 .hero {
   background-image: url("../../assets/hero.png");
   height: 280px;
@@ -11,11 +13,11 @@
     margin: auto;
     h1 {
       font-size: 48px;
-      color: #cfb995;
+      color: v.$brown-color;
       font-weight: 400;
     }
     p {
-      color: #fff;
+      color: v.$white-color;
       font-weight: 600;
     }
   }
@@ -23,8 +25,8 @@
   &__search {
     background: transparent;
     width: 400px;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid v.$white-color;
+    color: v.$white-color;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,8 +44,8 @@
   }
 
   &__searchActive {
-    background: #fff;
-    color: #303030;
+    background: v.$white-color;
+    color: v.$darkGrey-color;
   }
 
   &__searchContainer {
@@ -51,14 +53,14 @@
     z-index: 99;
     top: 4em;
     width: 400px;
-    background: #fff;
+    background: v.$white-color;
     left: 0;
     border-radius: 5px;
-    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: v.$boxShadow;
     padding: 0.5em;
     a,
     p {
-      color: #303030;
+      color: v.$grey-color;
       height: 45px;
       align-items: center;
       display: flex;

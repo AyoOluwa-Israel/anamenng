@@ -25,8 +25,6 @@ const HeroSection = ({ data }: any) => {
     setActiveSearch(false);
   };
 
-  console.log(data, "hero");
-
   const filterSearchFn = useCallback(() => {
     if (searchValue !== "") {
       const filterSearch = data?.filter((el: any) => el?.value.toLowerCase().indexOf(searchValue?.toLowerCase()) > -1);

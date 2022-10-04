@@ -1,6 +1,8 @@
+@use "../../globalStyle.scss" as v;
+
 .button {
-  color: #cfb995;
-  border: 1px solid #cfb995;
+  color: v.$brown-color;
+  border: 1px solid v.$brown-color;
   width: 180px;
   margin: auto;
   display: flex;
