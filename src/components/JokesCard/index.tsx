@@ -4,7 +4,7 @@ import { TbArrowNarrowRight } from "react-icons/tb";
 
 const JokesCard = ({ joke }: any) => {
   return (
-    <div className="jokesCard" key={joke.id}>
+    <div className="jokesCard" data-aos="zoom-in" data-aos-duration="1500" key={joke.id}>
       <div className="jokesCard__title">
         <IoIosFlash />
 

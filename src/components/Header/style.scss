@@ -43,3 +43,12 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    &__left {
+      display: none;
+      padding: 0;
+    }
+  }
+}

@@ -6,5 +6,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
+    margin-bottom: 2em;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .homePage {
+    &__card {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .homePage {
+    &__card {
+      grid-template-columns: 1fr;
+    }
   }
 }

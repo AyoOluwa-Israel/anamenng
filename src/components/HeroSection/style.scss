@@ -45,3 +45,15 @@
     color: #303030;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    &__search {
+      width: 100%;
+      padding: 0;
+      input {
+        padding-left: 1em;
+      }
+    }
+  }
+}

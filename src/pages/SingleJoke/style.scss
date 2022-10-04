@@ -1,12 +1,33 @@
 .singleJoke {
   background-color: #f9f9f9;
   padding: 5em 0;
+
+  &__backButton {
+    height: 50px;
+    width: 50px;
+    background: #303030;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 70px;
+    color: #cfb995;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  &__container {
+    width: 80%;
+    margin: auto;
+  }
   &__wrapper {
     display: flex;
-    width: 80%;
     margin: auto;
     justify-content: space-between;
     column-gap: 2em;
+    width: 100%;
   }
 
   &__left {
@@ -14,7 +35,7 @@
     border-radius: 3px;
   }
   &__leftTop {
-    height: 240px;
+    height: 280px;
     // width: 100%;
     border: 2px solid #ebebe9;
     border-radius: 2px;
@@ -37,13 +58,14 @@
       color: #cfb995;
       font-weight: 500;
       font-size: 40px;
+      padding-top: 5px;
     }
 
     > p {
       line-height: 1.57;
       letter-spacing: normal;
       font-size: 14px;
-      margin-top: 1em;
+      margin-top: 0.5em;
     }
   }
   &__leftHeader {
@@ -54,7 +76,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 1.5em;
   }
 
   &__vote {
@@ -109,7 +131,28 @@
       color: #cfb995;
       border: 1px solid #ebebe9;
       background-color: #fff;
-      padding: 0.5em;
+      width: 150px;
+      height: 45px;
+      padding: 0 6px;
+      cursor: pointer;
+    }
+
+    > div:last-child {
+      &:hover {
+        box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.15);
+        p {
+          padding-right: 1em;
+        }
+      }
+    }
+
+    > div:first-child {
+      &:hover {
+        box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.15);
+        p {
+          padding-left: 1em;
+        }
+      }
     }
   }
 
@@ -118,8 +161,47 @@
     border: 2px solid #ebebe9;
     border-radius: 2px;
     padding: 16px;
-    height: 300px;
+    height: 350px;
     background-color: #fff;
     border-radius: 3px;
+
+    p {
+      text-decoration: underline;
+      padding: 8px 0;
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .singleJoke {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__left {
+      width: 100%;
+    }
+    &__right {
+      width: 100%;
+      height: auto;
+      margin-top: 1em;
+      h3 {
+        font-size: 18px;
+      }
+    }
+    &__leftTop {
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    &__leftBottom {
+      flex-direction: column;
+      margin-top: 1em;
+      > div {
+        margin-top: 1em;
+      }
+    }
   }
 }
