@@ -1,16 +1,18 @@
+@use "../../globalStyle.scss" as v;
+
 .singleJoke {
-  background-color: #f9f9f9;
+  background-color: v.$closeWhite-color;
   padding: 5em 0;
 
   &__backButton {
     height: 50px;
     width: 50px;
-    background: #303030;
+    background: v.$darkGrey-color;
     border-top-left-radius: 35px;
     border-top-right-radius: 40px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 70px;
-    color: #cfb995;
+    color: v.$brown-color;
     margin-bottom: 1em;
     display: flex;
     justify-content: center;
@@ -37,17 +39,17 @@
   &__leftTop {
     height: 280px;
     // width: 100%;
-    border: 2px solid #ebebe9;
+    border: 2px solid v.$borderColor;
     border-radius: 2px;
     padding: 1em;
-    background-color: #fff;
+    background-color: v.$white-color;
 
     &__icon {
       display: flex;
       align-items: center;
       height: 15px;
-      background-color: #005c29;
-      color: #fff;
+      background-color: v.$deep-green;
+      color: v.$white-color;
       font-size: 12px;
       padding: 4px 7px;
       border-radius: 50px;
@@ -55,7 +57,7 @@
     }
 
     h1 {
-      color: #cfb995;
+      color: v.$brown-color;
       font-weight: 500;
       font-size: 40px;
       padding-top: 5px;
@@ -83,7 +85,7 @@
     display: flex;
     text-align: center;
     > div {
-      color: #005c29;
+      color: v.$deep-green;
       margin: 0 1em;
 
       p {
@@ -93,7 +95,7 @@
       > div {
         width: 35px;
         height: 35px;
-        background-color: rgba(0, 92, 41, 0.7);
+        background-color: rgba(v.$deep-green, 0.7);
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -105,17 +107,17 @@
         }
 
         &:hover {
-          background-color: #005c29;
+          background-color: v.$deep-green;
         }
       }
     }
 
     > div:last-child {
-      color: #9b111e;
+      color: v.$deep-red;
       div {
-        background-color: rgba(155, 17, 30, 0.7);
+        background-color: rgba(v.$deep-red, 0.7);
         &:hover {
-          background-color: #9b111e;
+          background-color: v.$deep-red;
         }
       }
     }
@@ -128,9 +130,9 @@
     > div {
       display: flex;
       align-items: center;
-      color: #cfb995;
-      border: 1px solid #ebebe9;
-      background-color: #fff;
+      color: v.$brown-color;
+      border: 1px solid v.$borderColor;
+      background-color: v.$white-color;
       width: 150px;
       height: 45px;
       padding: 0 6px;
@@ -139,7 +141,7 @@
 
     > div:last-child {
       &:hover {
-        box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: v.$boxShadow;
         p {
           padding-right: 1em;
         }
@@ -148,7 +150,7 @@
 
     > div:first-child {
       &:hover {
-        box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: v.$boxShadow;
         p {
           padding-left: 1em;
         }
@@ -158,11 +160,11 @@
 
   &__right {
     width: 39%;
-    border: 2px solid #ebebe9;
+    border: 2px solid v.$borderColor;
     border-radius: 2px;
     padding: 16px;
     height: 350px;
-    background-color: #fff;
+    background-color: v.$white-color;
     border-radius: 3px;
 
     p {
