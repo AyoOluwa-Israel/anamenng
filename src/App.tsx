@@ -15,7 +15,7 @@ function App() {
     AOS.refresh();
   }, []);
 
-  const { data } = useQuery(["allJokes"], getAllJokes);
+  const { data, isLoading } = useQuery(["allJokes"], getAllJokes);
 
   return (
     <BrowserRouter>

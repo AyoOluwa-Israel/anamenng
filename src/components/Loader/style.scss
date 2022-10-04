@@ -1,0 +1,24 @@
+@use "../../globalStyle.scss" as v;
+
+.loader {
+  background: v.$white-color;
+  height: 100vh;
+  width: 100%;
+  color: v.$brown-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__icon {
+    color: v.$brown-color;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 1em;
+  }
+}

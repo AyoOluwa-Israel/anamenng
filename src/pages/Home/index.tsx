@@ -6,6 +6,7 @@ import { getAllCategories, getAllJokes } from "../../services/jokesService";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Button from "../../components/Button";
+import Loader from "../../components/Loader";
 
 const Home = ({ data }: any) => {
   const [categoryValue, setCategoryValue] = useState(data);
@@ -45,6 +46,7 @@ const Home = ({ data }: any) => {
       </div>
 
       <Button onClick={viewMore} />
+      {/* <Loader/> */}
     </div>
   );
 };

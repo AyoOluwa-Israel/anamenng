@@ -6,16 +6,20 @@ import Up from "../../assets/up.png";
 import Down from "../../assets/down.png";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { GoPrimitiveDot } from "react-icons/go";
+import Loader from "../../components/Loader";
 
 const SingleJoke = () => {
   const { id }: any = useParams();
 
   const query = id.substring(0, 30);
 
-  const { data } = useQuery(["singleJoke"], () => getAJoke(query));
+  const { data, isLoading } = useQuery(["singleJoke"], () => getAJoke(query));
   const { data: allJokes } = useQuery(["allJokes"], getAllJokes);
 
-  console.log("data", data);
+  if (isLoading) {
+    return <Loader />;
+  }
+
   return (
     <div className="singleJoke">
       <div className="singleJoke__container">

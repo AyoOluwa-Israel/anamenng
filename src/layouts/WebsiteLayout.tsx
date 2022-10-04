@@ -4,9 +4,13 @@ import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
+import Loader from "../components/Loader";
 import { getAllJokes } from "../services/jokesService";
 
-const WebsiteLayout = ({ data }: any) => {
+const WebsiteLayout = ({ data, isLoading }: any) => {
+  if (isLoading) {
+    return <Loader />;
+  }
   return (
     <div className="">
       <Header />
