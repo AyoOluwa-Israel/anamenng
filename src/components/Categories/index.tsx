@@ -10,7 +10,7 @@ const Categories = ({ categoryData }: any) => {
           console.log(backgroundPicker(category));
           return (
             <p key={category} className={`${backgroundPicker(category)}`}>
-              {category}
+              {category.toUpperCase()}
             </p>
           );
         })}
