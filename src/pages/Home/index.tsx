@@ -7,8 +7,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Button from "../../components/Button";
 
-const Home = () => {
-  const { data } = useQuery(["allJokes"], getAllJokes);
+const Home = ({ data }: any) => {
   const [categoryValue, setCategoryValue] = useState(data);
   const { data: categoryData } = useQuery(["allCategories"], getAllCategories);
   const [numOfCard, setNumOfCard] = useState(6);
@@ -17,11 +16,7 @@ const Home = () => {
     setCategoryValue(data);
   }, [data]);
 
-  console.log(data);
-  // let x = 9;
-
   const filterCategory = (category: any) => {
-    console.log(category);
     if (category === "all") {
       setCategoryValue(data);
       return;

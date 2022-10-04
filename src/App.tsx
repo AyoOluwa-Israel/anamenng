@@ -6,17 +6,22 @@ import SingleJoke from "./pages/SingleJoke";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useQuery } from "@tanstack/react-query";
+import { getAllJokes } from "./services/jokesService";
 
 function App() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
+
+  const { data } = useQuery(["allJokes"], getAllJokes);
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<WebsiteLayout />}>
-          <Route path="/" element={<Home />} />
+        <Route element={<WebsiteLayout data={data} />}>
+          <Route path="/" element={<Home data={data} />} />
           <Route path="/:id" element={<SingleJoke />} />
         </Route>
       </Routes>

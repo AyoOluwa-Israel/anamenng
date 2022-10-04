@@ -31,6 +31,7 @@
     padding: 0 1em;
     border-radius: 5px;
     margin: 2em auto;
+    position: relative;
     input {
       height: 45px;
       background: transparent;
@@ -44,6 +45,32 @@
     background: #fff;
     color: #303030;
   }
+
+  &__searchContainer {
+    position: absolute;
+    z-index: 99;
+    top: 4em;
+    width: 400px;
+    background: #fff;
+    left: 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.15);
+    padding: 0.5em;
+    a,
+    p {
+      color: #303030;
+      height: 45px;
+      align-items: center;
+      display: flex;
+      padding: 0 1em;
+      border-top: 1px solid #ebebe9;
+      font-size: 14px;
+    }
+
+    p:first-child {
+      border: none;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -54,6 +81,10 @@
       input {
         padding-left: 1em;
       }
+    }
+
+    &__searchContainer {
+      width: 100%;
     }
   }
 }
