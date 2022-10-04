@@ -1,0 +1,47 @@
+.hero {
+  background-image: url("../../assets/hero.png");
+  height: 280px;
+  width: 100%;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  &__wrapper {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    h1 {
+      font-size: 48px;
+      color: #cfb995;
+      font-weight: 400;
+    }
+    p {
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+
+  &__search {
+    background: transparent;
+    width: 400px;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    border-radius: 5px;
+    margin: 2em auto;
+    input {
+      height: 45px;
+      background: transparent;
+      width: 80%;
+      outline: none;
+      border: none;
+    }
+  }
+
+  &__searchActive {
+    background: #fff;
+    color: #303030;
+  }
+}

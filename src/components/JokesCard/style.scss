@@ -1,0 +1,45 @@
+.jokesCard {
+  width: 320px;
+  height: 264px;
+  border: 2px solid #ebebe9;
+  border-radius: 2px;
+  padding: 16px;
+  cursor: pointer;
+
+  &__title {
+    display: flex;
+
+    p {
+      color: #303030;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: normal;
+    }
+  }
+
+  > p {
+    height: 75%;
+    padding: 10px 0;
+    color: #303030;
+    line-height: 1.57;
+    letter-spacing: normal;
+    font-size: 14px;
+  }
+
+  &__cardLink {
+    color: #cfb995;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      margin-right: 4px;
+      font-weight: 600;
+    }
+  }
+}

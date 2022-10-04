@@ -1,0 +1,44 @@
+.category {
+  padding: 3em 0;
+  &__wrapper {
+    width: 80%;
+    display: flex;
+    gap: 1em;
+    margin: auto;
+    flex-wrap: wrap;
+    p {
+      width: 180px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 15px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2px;
+      // background-color: #ff5b5b;
+    }
+  }
+
+  &__animal {
+    background-color: #ff5b5b;
+  }
+  &__career {
+    background-color: #ff915b;
+  }
+  &__celebrity {
+    background-color: #ffbe5b;
+  }
+  &__dev {
+    background-color: #ffdf5b;
+  }
+  &__explicit {
+    background-color: #8fe360;
+  }
+  &__fashion {
+    background-color: #57e690;
+  }
+  &__food {
+    background-color: #57dbe6;
+  }
+}

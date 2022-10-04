@@ -1,5 +1,7 @@
 import React from "react";
 import "./style.scss";
+import { BsFillPersonFill } from "react-icons/bs";
+import { MdArrowDropDown } from "react-icons/md";
 
 const Header = () => {
   return (
@@ -12,7 +14,14 @@ const Header = () => {
 
           <p>SONDRANGEBOTE</p>
 
-          <div>MAIN BERECICH</div>
+          <div>
+            <div>
+              <BsFillPersonFill size={20} />
+              <p> MAIN BERECICH</p>
+            </div>
+
+            <MdArrowDropDown size={24} />
+          </div>
         </div>
       </div>
     </div>

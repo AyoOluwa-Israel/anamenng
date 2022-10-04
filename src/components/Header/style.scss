@@ -18,7 +18,7 @@
     color: #fff;
     align-items: center;
     letter-spacing: normal;
-    p {
+    > p {
       width: 200px;
     }
 
@@ -27,8 +27,19 @@
       background: #cfb995;
       height: 50px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      padding: 0 8px;
+      cursor: pointer;
+
+      > div {
+        display: flex;
+        align-items: center;
+        padding-right: 5px;
+        p {
+          padding-left: 5px;
+        }
+      }
     }
   }
 }
