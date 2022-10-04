@@ -1,0 +1,125 @@
+.singleJoke {
+  background-color: #f9f9f9;
+  padding: 5em 0;
+  &__wrapper {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    column-gap: 2em;
+  }
+
+  &__left {
+    width: 69%;
+    border-radius: 3px;
+  }
+  &__leftTop {
+    height: 240px;
+    // width: 100%;
+    border: 2px solid #ebebe9;
+    border-radius: 2px;
+    padding: 1em;
+    background-color: #fff;
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      height: 15px;
+      background-color: #005c29;
+      color: #fff;
+      font-size: 12px;
+      padding: 4px 7px;
+      border-radius: 50px;
+      font-weight: 500;
+    }
+
+    h1 {
+      color: #cfb995;
+      font-weight: 500;
+      font-size: 40px;
+    }
+
+    > p {
+      line-height: 1.57;
+      letter-spacing: normal;
+      font-size: 14px;
+      margin-top: 1em;
+    }
+  }
+  &__leftHeader {
+    display: flex;
+  }
+
+  &__leftBottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  &__vote {
+    display: flex;
+    text-align: center;
+    > div {
+      color: #005c29;
+      margin: 0 1em;
+
+      p {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      > div {
+        width: 35px;
+        height: 35px;
+        background-color: rgba(0, 92, 41, 0.7);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+
+        &:hover {
+          background-color: #005c29;
+        }
+      }
+    }
+
+    > div:last-child {
+      color: #9b111e;
+      div {
+        background-color: rgba(155, 17, 30, 0.7);
+        &:hover {
+          background-color: #9b111e;
+        }
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    > div {
+      display: flex;
+      align-items: center;
+      color: #cfb995;
+      border: 1px solid #ebebe9;
+      background-color: #fff;
+      padding: 0.5em;
+    }
+  }
+
+  &__right {
+    width: 39%;
+    border: 2px solid #ebebe9;
+    border-radius: 2px;
+    padding: 16px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 3px;
+  }
+}

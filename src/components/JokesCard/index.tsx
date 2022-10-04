@@ -1,4 +1,3 @@
-import React from "react";
 import { IoIosFlash } from "react-icons/io";
 import "./style.scss";
 import { TbArrowNarrowRight } from "react-icons/tb";
@@ -17,7 +16,7 @@ const JokesCard = ({ joke }: any) => {
           <p>UNCATEGORIZED</p>
         )}
       </div>
-      <p>{joke.value}</p>
+      <p>{joke?.value?.length > 350 ? `${joke?.value.substring(0, 350)}...` : joke?.value}</p>
 
       <div className="jokesCard__cardLink">
         <div></div>
